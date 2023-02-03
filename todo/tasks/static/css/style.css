@@ -15,6 +15,14 @@ python .\manage.py runserver
     margin: auto;
 }
 
+a.navbar-brand{
+    transform: translateX(20px);
+}
+.navbar-brand:hover{
+    transition: 0.3s;
+    font-weight: bolder;
+    transform: translate(20px, -4px);
+}
 .navbar-brand{
     font-weight: bold;
 }
@@ -31,6 +39,9 @@ python .\manage.py runserver
     
 }
 /*Botão Adicionar*/
+#add-link{
+    text-decoration: none;
+}
 .add-div{
     background-color: #3476e2;
     cursor: pointer;
