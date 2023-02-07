@@ -43,13 +43,20 @@ a.navbar-brand{
     text-decoration: none;
 }
 .add-div{
-    background-color: #3476e2;
+    background-color: #2859a7;
     cursor: pointer;
     display: inline-block;
     color: #FFF;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 35px;
     margin-right: 25px;
+}
+.add-div:hover{
+    background-color: #5898ff;
+}
+.btn{
+    background-color: #db1e47;
+    border: transparent;
 }
 .fas.fa-plus{
     color: #fff;
@@ -90,6 +97,9 @@ a.navbar-brand{
     float: right;
 }
 .fas.fa-trash{
+    color: #2859a7;
+}
+.fas.fa-trash:hover{
     color: #db1e47;
 }
 .fas.fa-edit{
@@ -109,4 +119,11 @@ footer p{
     text-align: center;
     top: 50%;
     position: relative;
+}
+/*MESSAGES*/
+ul.messages{
+    padding: 0;
+}
+ul.messages li{
+    list-style: none;
 }
