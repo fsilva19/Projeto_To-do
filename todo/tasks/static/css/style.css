@@ -1,5 +1,7 @@
 /*PARA RODAR O SERVIDOR:
 python .\manage.py runserver
+usuario: felipeg
+senha: Ca****...-1
 */
 .container-fluid{
     padding: 0;
@@ -49,7 +51,6 @@ a.navbar-brand{
     color: #FFF;
     padding: 8px;
     border-radius: 35px;
-    margin-right: 25px;
 }
 .add-div:hover{
     background-color: #5898ff;
@@ -74,6 +75,7 @@ a.navbar-brand{
     margin-top: 15px;
     margin-bottom: 15px;
     display: inline-block;
+    margin-left: 25px;
 }
 
 /*Lista de Tarefas*/

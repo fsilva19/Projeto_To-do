@@ -19,7 +19,9 @@ def newTask(request): #para criar uma nova tarefa
             task = form.save(commit=False)
             task.done = 'doing'
             task.save()
+            messages.success(request, 'Tarefa criada com sucesso!')
             return redirect('/')
+        
     else:
         form = TaskForm()
         return render(request, 'tasks/addtask.html', {'form': form})
@@ -43,7 +45,7 @@ def deleteTask(request, id):
     task = get_object_or_404(Task, pk=id)
     task.delete()
     
-    messages.info(request, 'Tarefa deletada com sucesso!')
+    messages.warning(request, 'Tarefa deletada com sucesso!')
     
     return redirect('/')
     

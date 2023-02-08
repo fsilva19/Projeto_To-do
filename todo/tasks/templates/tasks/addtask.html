@@ -2,7 +2,7 @@
 {% block title%}Adicione uma Tarefa{%endblock%}
 {%block content%}
     <div class="offset-1 col-10 list-div">
-        <h1>Adicione a sua nova tarefa:</h1>
+        <h1>Adicione uma nova tarefa:</h1>
         <form method="POST">
             {%csrf_token%}
             {{form.as_p}}
