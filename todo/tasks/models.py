@@ -11,7 +11,9 @@ class Task(models.Model):
     title = models.CharField(
         max_length=255
     )
-    description = models.TextField()
+    description = models.CharField(
+        max_length=9999
+    )
     done = models.CharField(
         max_length=5,
         choices=STATUS,

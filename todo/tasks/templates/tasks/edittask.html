@@ -2,6 +2,9 @@
 {% block title%}Editando '{{task.title}}'{%endblock%}
 {%block content%}
     <div class="offset-1 col-10 list-div">
+        <a href="/">
+            <i class="fas fa-arrow-left"></i>
+        </a>
         <h1>Editando '{{task.title}}'</h1>
         <form method="POST">
             {%csrf_token%}
