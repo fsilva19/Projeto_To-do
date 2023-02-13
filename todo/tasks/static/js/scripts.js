@@ -1,1 +1,30 @@
-console.log('funcionou');
+    var baseUrl = window.location.origin;
+    var deleteBtn = $(".delete-btn");
+    var searchBtn = $('#search-btn');
+    var searchForm = $('#search-form');
+    var filter = $('#filter');
+$(document).ready(function(){
+    
+    $(deleteBtn).on('click', function(e){
+        e.preventDefault();
+        var delLink = $(this).attr('href');
+        var result = confirm('Deseja deletar esta tarefa?');
+
+        if(result){
+            window.location.href = delLink;
+        }
+    });
+
+
+    $(searchBtn).on('click', function(){
+        searchForm.submit();
+    });
+
+
+    $(filter).change(function(){
+        var filter = $(this).val();
+        window.location.href = baseUrl + '?filter=' + filter;
+    });
+});
+
+
